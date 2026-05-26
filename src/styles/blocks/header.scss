@@ -1,0 +1,37 @@
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+
+  background-image: url(../images/bg.png);
+  background-position: right center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+
+    @include on-tablet{
+      font-size: 64px;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 88px;
+    text-align: center;
+
+    @include content-padding-in-line;
+
+    @include on-tablet {
+      padding-bottom: 130px;
+    }
+  }
+}
+
+

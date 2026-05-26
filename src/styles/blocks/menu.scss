@@ -1,0 +1,51 @@
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  text-transform: uppercase;
+
+  background-color: $menu-color-background;
+
+  display: flex;
+  flex-direction: column;
+
+  &__top-bar {
+    margin-bottom: 24px;
+
+    @include on-tablet {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    @include content-padding-in-line;
+  }
+
+  &__phone-number {
+    display: block;
+    margin-bottom: 16px;
+
+    color: $dark-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__book-a-test-ride {
+    display: block;
+    width: fit-content;
+    padding-bottom: 7px;
+    color: $dark-color;
+    border-bottom: 1px solid $dark-color;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+}
