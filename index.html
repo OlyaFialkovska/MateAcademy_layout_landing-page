@@ -10,7 +10,7 @@
 
     <link
     rel="stylesheet"
-    href="src/styles/style.css"
+    href="src/styles/style.scss"
     />
 
     <!-- <link
@@ -31,7 +31,7 @@
     >
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;&family=Roboto:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
   </head>
@@ -39,12 +39,24 @@
     <!-- #region header -->
     <header class="header">
       <div class="top-bar">
-        <a href="#" class="top-bar__logo">
-          <img src="src/images/my-bike-logo-white.svg" alt="MyBIKE logo">
+        <a href="#" class="top-bar__logo-link">
+          <img
+            class="top-bar__logo"
+            src="src/images/my-bike-logo-white.svg"
+            alt="MyBIKE logo"
+          >
         </a>
 
         <div class="top-bar__icons">
-          <a href="#" class="icon icon--phone"></a>
+          <div class="top-bar__phone">
+            <a href="#" class="icon icon--phone"></a>
+            <a
+              href="tel:+1 234 555-55-55"
+              class="top-bar__phone-number">
+              +1 234 555-55-55
+            </a>
+          </div>
+
           <a href="#menu" class="icon icon--menu"></a>
         </div>
       </div>
@@ -95,7 +107,7 @@
     <!-- #endregion -->
 
     <!-- #region main -->
-    <main>
+    <main class="page__main">
       <section class="move-free" id="about-us">
         <h2>Move Free</h2>
       </section>
@@ -116,7 +128,7 @@
     <!-- #endregion -->
 
     <!-- #region footer -->
-    <footer>
+    <footer class="page__footer">
 
     </footer>
     <!-- #endregion -->
