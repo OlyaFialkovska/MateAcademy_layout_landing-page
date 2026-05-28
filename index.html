@@ -42,7 +42,7 @@
         <a href="#" class="top-bar__logo-link">
           <img
             class="top-bar__logo"
-            src="src/images/my-bike-logo-white.svg"
+            src="src/images/MyBiKE-white-logo.png"
             alt="MyBIKE logo"
           >
         </a>
@@ -70,8 +70,12 @@
     <!-- #region aside -->
     <aside class="page__menu menu" id="menu">
       <div class="top-bar menu__top-bar">
-        <a href="#" class="top-bar__logo">
-          <img src="src/images/my-bike-logo-dark.svg" alt="MyBIKE logo">
+        <a href="#">
+          <img
+            class="top-bar__logo"
+            src="src/images/MyBIKE-dark-logo.png"
+            alt="MyBIKE logo"
+          >
         </a>
 
         <a href="#" class="icon icon--close"></a>
@@ -108,20 +112,82 @@
 
     <!-- #region main -->
     <main class="page__main">
-      <section class="move-free" id="about-us">
-        <h2>Move Free</h2>
+      <section class="section move-free section--move-free" id="about-us">
+        <h2 class="section-title move-free__title">Move Free</h2>
+        <p class="move-free__text">Shift your ride, not gears.
+          Find the fastest way to move
+          in the city as the bike adapts
+          intuitively to power the speed you need.
+        </p>
       </section>
 
-      <section class="compare-bikes" id="compare-bikes">
-        <h2>Compare bikes</h2>
+      <section class="section section--compare-bikes" id="compare-bikes">
+        <h2 class="section-title compare-bikes__title">Compare bikes</h2>
+        <div class="compare-bikes">
+          <article class="compare-bikes__card">
+            <img
+              src="./src/images/compare-bikes/sporty-4.png"
+              alt="Compare Bikes Sporty 4"
+              class="compare-bikes__img"
+            >
+            <h3 class="compare-bikes__text compare-bikes__text--title">
+              Sporty 4
+            </h3>
+            <p class="compare-bikes__text compare-bikes__text--describe">
+              The iconic frame brought to a new
+              performance height as a sporty, active ride.
+            </p>
+            <p class="compare-bikes__text compare-bikes__text--price">
+              $ 2 590
+            </p>
+          </article>
+
+          <article class="compare-bikes__card">
+            <img
+              src="./src/images/compare-bikes/ride-in-town-st.png"
+              alt="Compare Bikes Ride in town ST"
+              class="compare-bikes__img"
+            >
+            <h3 class="compare-bikes__text compare-bikes__text--title">
+              Ride in town ST
+            </h3>
+            <p class="compare-bikes__text compare-bikes__text--describe">
+              An open frame for an upright riding
+              position as the most comfortable ride in town.
+            </p>
+            <p class="compare-bikes__text compare-bikes__text--price">
+              $ 2 590
+            </p>
+          </article>
+
+          <article class="compare-bikes__card">
+            <img
+              src="./src/images/compare-bikes/agile-ride-3.png"
+              alt="Compare Bikes Agile ride 3"
+              class="compare-bikes__img"
+            >
+            <h3 class="compare-bikes__text compare-bikes__text--title">
+              Agile ride 3
+            </h3>
+            <p class="compare-bikes__text compare-bikes__text--describe">
+              The lightweight frame that has
+              earned its street tread as a sleek, agile ride.
+            </p>
+            <p class="compare-bikes__text compare-bikes__text--price">
+              $ 2 090
+            </p>
+          </article>
+        </div>
+
+
       </section>
 
-      <section class="the-details" id="details">
-        <h2>The details</h2>
+      <section class="section section--the-details" id="details">
+        <h2 class="section-title">The details</h2>
       </section>
 
-      <section class="contact-us" id="contacts">
-        <h2>Contact us</h2>
+      <section class="section section--contact-us" id="contacts">
+        <h2 class="section-title">Contact us</h2>
       </section>
 
     </main>

@@ -1,0 +1,71 @@
+.section{
+  max-width: 1020px;
+  margin-inline: auto;
+
+  &-title{
+    margin: 0;
+
+    color: $main-color-text;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+
+    @include on-tablet{
+      font-size: 48px;
+    }
+
+    @include on-desktop{
+      font-size: 64px;
+    }
+  }
+
+  &--move-free {
+    margin-top: 60px;
+
+    @include on-tablet {
+      margin-top: 120px;
+    }
+  }
+
+  &--compare-bikes {
+    margin-top: 92px;
+
+    @include on-tablet {
+      margin-top: 132px;
+    }
+
+    @include on-desktop {
+      margin-top: 164px;
+    }
+  }
+
+  &--the-details {
+    margin-top: 92px;
+
+    @include on-tablet {
+      margin-top: 120px;
+    }
+
+    @include on-desktop {
+      margin-top: 144px;
+    }
+  }
+
+  &--contact-us {
+    margin-top: 80px;
+
+    @include on-tablet {
+      margin-top: 120px;
+    }
+
+    @include on-desktop {
+      margin-top: 180px;
+    }
+  }
+
+
+}
+
+
