@@ -14,14 +14,14 @@
   &--phone {
     background-image: url(../images/icon/icon-phone.svg);
 
-    @include on-tablet{
-      order: 1;
-      &:hover + .top-bar__phone-number {
-        display: block;
-        opacity: 1;
-        pointer-events: all;
-      }
-    }
+    // @include on-tablet{
+    //   order: 1;
+    //   &:hover + .top-bar__phone-number {
+    //     display: block;
+    //     opacity: 1;
+    //     pointer-events: all;
+    //   }
+    // }
   }
 
   &--menu {

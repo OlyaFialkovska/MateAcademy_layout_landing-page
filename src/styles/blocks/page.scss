@@ -1,7 +1,7 @@
 .page {
   font-family: Poppins, sans-serif;
   font-weight: 400;
-
+  color: $main-color-text;
 
   scroll-behavior: smooth;
 
@@ -9,8 +9,7 @@
   margin: 0;
   min-width: 320px;
 
-  background-color: $dark-color;
-  color: $main-color-text;
+  background-color: $dark-color;//only for show
   }
 
   &__menu {
@@ -19,12 +18,13 @@
     left: 0;
     right: 0;
 
+    transition:
+        transform $effect-duration,
+        opacity $effect-duration;
     opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
-    transition:
-      transform 0.3s,
-      opacity 0.3s;
+
 
     &:target {
       opacity: 1;
@@ -34,8 +34,30 @@
     }
   }
 
+  &__footer{
+    height: 200px;
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
 
-  &__main{
-    @include content-padding-in-line
+    @include on-tablet{
+      height: 480px;
+    }
+    @include on-desktop{
+      height: 555px;
+    }
   }
 }
+
+.main__content {
+  display: grid;
+  row-gap: 92px;
+  padding-block: 60px;
+
+  @include on-tablet {
+    row-gap: 120px;
+    padding-block: 120px;
+  }
+}
+
+

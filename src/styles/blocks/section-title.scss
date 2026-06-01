@@ -1,71 +1,48 @@
-.section{
-  max-width: 1020px;
-  margin-inline: auto;
+.section-title {
+  margin: 0;
 
-  &-title{
-    margin: 0;
+  color: $main-color-text;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
 
-    color: $main-color-text;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: -1.5px;
-    text-align: center;
+  &--align-left {
+    text-align: left;
+  }
 
-    @include on-tablet{
-      font-size: 48px;
-    }
+  @include on-tablet {
+    font-size: 48px;
 
-    @include on-desktop{
-      font-size: 64px;
+    //margin bottom
+    &--the-details {
+      margin-bottom: 64px;
     }
   }
 
-  &--move-free {
-    margin-top: 60px;
+  @include on-desktop {
+    font-size: 64px;
 
-    @include on-tablet {
-      margin-top: 120px;
-    }
-  }
-
-  &--compare-bikes {
-    margin-top: 92px;
-
-    @include on-tablet {
-      margin-top: 132px;
+    //margin bottom
+    &--compare-bikes {
+      margin-bottom: 56px;
     }
 
-    @include on-desktop {
-      margin-top: 164px;
-    }
-  }
-
-  &--the-details {
-    margin-top: 92px;
-
-    @include on-tablet {
-      margin-top: 120px;
+    &--the-details {
+      margin-bottom: 48px;
     }
 
-    @include on-desktop {
+    //margin top
+
+    &--the-details {
       margin-top: 144px;
     }
   }
-
-  &--contact-us {
-    margin-top: 80px;
-
-    @include on-tablet {
-      margin-top: 120px;
-    }
-
-    @include on-desktop {
-      margin-top: 180px;
-    }
-  }
-
-
 }
+
+
+
+
 
 

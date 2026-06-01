@@ -1,0 +1,83 @@
+.contacts{
+
+  &__content{
+    display: grid;
+    @include page-grid;
+  }
+
+  &__form{
+    display: grid;
+    margin-top: 48px;
+    row-gap: 16px;
+
+    grid-column: 1 / -1;
+
+    @include on-tablet{
+      grid-column: span 3;
+    }
+    @include on-desktop{
+      grid-column: span 5;
+    }
+  }
+
+  &__field{
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding-block: 14px;
+    padding-left: 16px;
+    background-color: $form-color;
+    border-radius: 40px;
+
+    &--textarea{
+      height: 148px;
+      border-radius: 16px;
+    }
+  }
+
+  &__button {
+    margin-top: 16px;
+    width: 100%;
+    height: 56px;
+    background-color: $main-color-text;
+    border-radius: 40px;
+
+    &--text {
+      text-decoration: none;
+      color: $dark-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+
+  &__info{
+    margin-top: 48px;
+
+    grid-column: 1 / -1;
+
+    @include on-tablet{
+      grid-column: span 2;
+    }
+    @include on-desktop{
+      grid-column: 8 / 10;
+    }
+  }
+
+  &__label{
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+}
