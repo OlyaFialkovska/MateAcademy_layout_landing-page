@@ -14,35 +14,9 @@
 
   @include on-tablet {
     font-size: 48px;
-
-    //margin bottom
-    &--the-details {
-      margin-bottom: 64px;
-    }
   }
 
   @include on-desktop {
     font-size: 64px;
-
-    //margin bottom
-    &--compare-bikes {
-      margin-bottom: 56px;
-    }
-
-    &--the-details {
-      margin-bottom: 48px;
-    }
-
-    //margin top
-
-    &--the-details {
-      margin-top: 144px;
-    }
   }
 }
-
-
-
-
-
-

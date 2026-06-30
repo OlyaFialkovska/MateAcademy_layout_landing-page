@@ -4,7 +4,6 @@
   background-color: $menu-color-background;
   text-transform: uppercase;
   color: $dark-color;
-  //font weight?
 
   &__top-bar {
     margin-bottom: 24px;
@@ -23,7 +22,7 @@
     margin-bottom: 16px;
 
     color: inherit;
-    font-weight: 600;//?
+    font-weight: 600;
     font-size: 16px;
     line-height: 27px;
     text-decoration: none;

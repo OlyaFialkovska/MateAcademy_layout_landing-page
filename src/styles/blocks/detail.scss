@@ -1,6 +1,7 @@
 .detail {
   &__photos {
     display: grid;
+
     @include page-grid;
   }
 
@@ -38,7 +39,6 @@
     }
   }
 
-
   &__title {
     margin-top: 16px;
     font-weight: 700;
@@ -54,6 +54,8 @@
   }
 
   &__button {
+    padding: 0;
+    border: 0;
     width: 278px;
     height: 56px;
     background-color: $main-color-text;
@@ -73,6 +75,14 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 27px;
+    }
+
+    &:hover {
+      box-shadow: 1px 4px 16px #e8e8f066;
+    }
+
+    &:active {
+      box-shadow: 1px 4px 16px #e8e8f0a3;
     }
   }
 }

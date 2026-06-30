@@ -4,7 +4,7 @@
   height: 24px;
   background-size: cover;
 
-  @include on-tablet{
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -14,20 +14,21 @@
   &--phone {
     background-image: url(../images/icon/icon-phone.svg);
 
-    // @include on-tablet{
-    //   order: 1;
-    //   &:hover + .top-bar__phone-number {
-    //     display: block;
-    //     opacity: 1;
-    //     pointer-events: all;
-    //   }
-    // }
+    &:hover + .top-bar__phone-number {
+      display: block;
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    @include on-tablet {
+      order: 1;
+    }
   }
 
   &--menu {
     background-image: url(../images/icon/icon-burger-menu.svg);
 
-    &:hover{
+    &:hover {
       background-image: url(../images/icon/icon-burger-menu-hover.svg);
     }
   }

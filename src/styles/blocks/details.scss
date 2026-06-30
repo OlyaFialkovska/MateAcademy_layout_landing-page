@@ -1,11 +1,12 @@
-.details{
-  &__wrapper{
+.details {
+  &__wrapper {
     margin-top: 48px;
     display: grid;
     justify-items: center;
     row-gap: 40px;
 
-    @include on-tablet{
+    @include on-tablet {
+      margin-top: 64px;
       row-gap: 48px;
     }
   }
