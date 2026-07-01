@@ -6,11 +6,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
     <title>MyBIKE</title>
+    <link
+      rel="icon"
+      href="src/images/favicon.png"
+    />
 
     <link
     rel="stylesheet"
-    href="src/styles/style.scss"
+    href="./src/styles/style.scss"
     />
 
     <!-- <link
@@ -50,7 +55,7 @@
             </a>
             <div class="top-bar__icons">
               <div class="top-bar__phone">
-                <a href="#" class="icon icon--phone"></a>
+                <a href="tel:+1 234 555-55-55" class="icon icon--phone"></a>
                 <a
                   href="tel:+1 234 555-55-55"
                   class="top-bar__phone-number">
@@ -101,7 +106,7 @@
               </li>
             </ul>
           </nav>
-          <a class="menu__phone-number" href="#phone-number">+1 234 5555-55-55</a>
+          <a class="menu__phone-number " href="tel:+12345555-55-55">+1 234 5555-55-55</a>
           <a class="menu__book-a-test-ride" href="#contacts">Book a test ride</a>
         </div>
       </div>
@@ -307,33 +312,39 @@
             </h2>
 
             <div class="contacts__content">
-              <div class="contacts__form">
-                <div class="contacts__form-wrapper">
-                  <input
+              <form
+                class="contacts__form contacts__form-wrapper"
+                onsubmit="this.reset(); return false;"
+              >
+                <input
                   type="text"
                   class="contacts__field contacts__field--button"
                   placeholder="Name"
-                  >
-                  <input
+                >
+                <input
                   type="email"
                   class="contacts__field contacts__field--button"
-                  placeholder="Email"
-                  >
-                  <textarea
+                  placeholder="Email, e.g. hello@gmail.com"
+                >
+                <textarea
                   name="message"
                   id="message"
                   class="contacts__field contacts__field--textarea"
-                  placeholder="Message"></textarea>
-                </div>
+                  placeholder="Message, e.g. I want to book a test ride"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="contacts__button contacts__button--text"
+                >Send</button>
 
-                <button class="contacts__button contacts__button--text">Send</button>
-              </div>
+              </form>
+
               <div class="contacts__info contacts__info-wrapper">
                 <div class="contacts__item">
                   <p class="contacts__label">
                     Phone
                   </p>
-                  <a href="+1 234 5555-55-55" class="contacts__link">
+                  <a href="tel:+1 234 5555-55-55" class="contacts__link">
                     +1 234 5555-55-55
                   </a>
                 </div>
@@ -351,7 +362,11 @@
                   <p class="contacts__label">
                     Address
                   </p>
-                  <a href="#" class="contacts__link">
+                  <a
+                    href="https://maps.app.goo.gl/xXirCav73ofLrMx96"
+                    class="contacts__link"
+                    target="_blank"
+                  >
                     400 first ave.
                     <br>suite 700
                     <br>Minneapolis, MN 55401

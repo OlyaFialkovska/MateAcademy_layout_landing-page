@@ -5,12 +5,19 @@
   text-transform: uppercase;
   color: $dark-color;
 
+  overflow: auto;
+
   &__top-bar {
     margin-bottom: 24px;
 
     @include on-tablet {
       margin-bottom: 8px;
     }
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $menu-color-background;
   }
 
   &__nav {
@@ -26,6 +33,8 @@
     font-size: 16px;
     line-height: 27px;
     text-decoration: none;
+
+    @include hover(color, $grey-color);
   }
 
   &__book-a-test-ride {
@@ -40,5 +49,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
+
+    @include hover(transform, scale($transform-scale-photos));
   }
 }

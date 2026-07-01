@@ -11,13 +11,6 @@
     }
   }
 
-  &__form-wrapper {
-    margin-top: 48px;
-    display: grid;
-    justify-items: center;
-    row-gap: 16px;
-  }
-
   &__info-wrapper {
     margin-top: 48px;
 
@@ -27,6 +20,13 @@
 
   &__content {
     @include page-grid;
+  }
+
+  &__form-wrapper {
+    margin-top: 48px;
+    display: grid;
+    justify-items: center;
+    row-gap: 16px;
   }
 
   &__form {
@@ -89,6 +89,19 @@
       height: 148px;
       border-radius: 16px;
     }
+
+    &:hover::placeholder {
+      color: $form-text-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px $form-color inset;
+      -webkit-text-fill-color: $form-text-color;
+    }
   }
 
   &__button {
@@ -117,6 +130,15 @@
     &:active {
       box-shadow: 1px 4px 16px #e8e8f0a3;
     }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px $form-color inset;
+      -webkit-text-fill-color: $form-text-color;
+    }
   }
 
   &__label {
@@ -133,5 +155,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+
+    @include hover(color, $menu-color-background);
   }
 }

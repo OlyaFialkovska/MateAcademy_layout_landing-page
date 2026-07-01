@@ -9,7 +9,7 @@
     width: 32px;
   }
 
-  @include hover(transform, scale(1.2));
+  @include hover(transform, scale($transform-scale-photos));
 
   &--phone {
     background-image: url(../images/icon/icon-phone.svg);
